@@ -1,0 +1,101 @@
+{
+  "title": "Choose the visual world for Soft Water Technologies",
+  "question": "Your story stays fixed: the family builds a home, digs the bore, the water is hard, they are sad, Soft Water fixes it, they are happy. Pick the world it is told in. Keep the roll, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Steel Koda Row",
+      "kicker": "THE ROLL",
+      "lineage": "The water corner of a Karnataka kitchen: steel kodas, copper bindige and chombu on a red-oxide ledge",
+      "thesis": "Hard water writes itself on steel as white chalky rings; soft water leaves it mirror-bright with the family reflected in it.",
+      "palette": ["#1c2427", "#c9d0d4", "#b5653a", "#8f2e22", "#e9ece4"],
+      "materials": ["brushed stainless steel (WebGL)", "copper", "red-oxide floor", "calcium scale crust"],
+      "viewport": "One huge polished steel koda fills the screen with the family's reflection on its belly; Kannada + English headline and a WhatsApp 'Book a free water test' button.",
+      "risk": "The family lives in reflections and silhouettes, not drawn faces, so it can feel indirect; WebGL steel needs a lighter fallback on low-end phones.",
+      "raised": [
+        {"from": "Bioluminescent plankton", "raise": "Water is a live particle field: touch it and hard-water flecks scatter; after softening it runs clear."},
+        {"from": "Alphabet storm", "raise": "Kannada type behaves as matter: ಗಡಸು (hard) crusts over with scale and dissolves into ಮೃದು (soft)."},
+        {"from": "Drum-machine step row", "raise": "One unbroken pipe runs down the whole page as the story timeline; its water level shows where you are."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Gruhapravesha Kalasha",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "The housewarming ritual: water-filled kalasha, mango-leaf thoranam, rangoli at the door",
+      "thesis": "The new home is blessed with water; we make sure that water is worthy of the kalasha.",
+      "palette": ["#f2a516", "#2f6b2a", "#b3122e", "#f6d64a", "#3a1d12"],
+      "materials": ["marigold garlands", "mango leaves", "brass kalasha", "rice-flour rangoli"],
+      "viewport": "A doorway with mango-leaf thoranam framing the family at their gruhapravesha, a kalasha in front, headline and WhatsApp button on the threshold.",
+      "risk": "The most familiar choice: marigold-and-mango-leaf is what most Indian festive and home sites look like."
+    },
+    {
+      "id": "challenger-saul-bass",
+      "label": "Cut-Paper Title Sequence",
+      "verdict": "competitive",
+      "lineage": "Saul Bass film title sequences, fused with Kannada cinema title cards",
+      "thesis": "The family's story told as a film opening: black cut-paper silhouettes on one flat colour field per act.",
+      "palette": ["#e0661f", "#141414", "#f1ece2", "#2b3f8f", "#3fa3c9"],
+      "materials": ["cut paper", "flat colour fields", "hand-set Kannada caps"],
+      "viewport": "A burnt-orange field; a black cut-paper house rises line by line while the title 'ಹೊಸ ಮನೆ' jitters into place, with a WhatsApp button set as a credit.",
+      "case": "Holds product clarity (a story in acts is exactly the brief) but loses on audience identification: it is a Hollywood form, not a Karnataka one.",
+      "risk": "Faceless silhouettes can feel cold for a warm family story unless the act colours carry the emotion.",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-saul-bass-title-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/posters-covers-sleeves-saul-bass-title.webp"
+    },
+    {
+      "id": "challenger-plankton",
+      "label": "Bioluminescent Wake",
+      "verdict": "declined",
+      "lineage": "Night sea with glowing plankton",
+      "thesis": "Water as living light that responds to touch.",
+      "palette": ["#02060c", "#2a7bff", "#7fe7ff"],
+      "materials": ["GPU particles", "black water"],
+      "viewport": "Black field; your finger draws glowing water trails.",
+      "case": "A borewell family does not see itself in a night ocean.",
+      "risk": "Pretty but says nothing about hard water.",
+      "kept": "Water as a live, touchable particle field.",
+      "hero": "https://impeccable.style/worlds/cards/reefs-bioluminescent-nocturnal-plankton-wake-stars-hero.webp"
+    },
+    {
+      "id": "challenger-alphabet",
+      "label": "Alphabet Storm",
+      "verdict": "declined",
+      "lineage": "Surreal letters-as-weather",
+      "thesis": "Words condense into weather and reshape the land.",
+      "palette": ["#f4f4f2", "#111111", "#b9bec4"],
+      "materials": ["monumental grotesk", "letter particles"],
+      "viewport": "Letters gather into a storm over white ground.",
+      "case": "Too abstract for a family deciding about their water.",
+      "risk": "Readability suffers mid-transformation.",
+      "kept": "Kannada type that turns hard to soft as physical matter.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-alphabet-storm-hero.webp"
+    },
+    {
+      "id": "challenger-steprow",
+      "label": "Drum-Machine Step Row",
+      "verdict": "declined",
+      "lineage": "Early-80s rhythm machine",
+      "thesis": "A sixteen-step row with a running chase light.",
+      "palette": ["#26272a", "#e2382b", "#f08a24", "#f2cc2f"],
+      "materials": ["silkscreen panel", "LED keys"],
+      "viewport": "Sixteen candy-coloured keys under a chase light.",
+      "case": "No link to homes or water.",
+      "risk": "Pure novelty for this audience.",
+      "kept": "One unbroken line that always shows where 'now' is.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-drum-machine-step-row-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A clean water-purifier company site, done properly.",
+    "palette": ["#ffffff", "#0b2540", "#1e88e5", "#e3f2fd"],
+    "materials": ["water-splash photography", "product cards", "icon rows"],
+    "viewport": "Blue water-splash hero with a headline, product grid and certification badges below.",
+    "risk": "Looks like every other RO and softener dealer; the family story becomes a side section."
+  },
+  "steer": true
+}

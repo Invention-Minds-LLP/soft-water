@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T17:59:56+00:00",
+  "title": "Design System: Soft Water Technologies",
+  "extensions": {
+    "colorMeta": {
+      "oxide": {
+        "role": "primary",
+        "displayName": "Red Oxide Floor",
+        "canonical": "#7a2418",
+        "tonalRamp": [
+          "#1f0000",
+          "#4a0300",
+          "#721d11",
+          "#963e30",
+          "#ba5f4f",
+          "#e0806f",
+          "#ffab9c",
+          "#ffe9e4"
+        ]
+      },
+      "oxide-900": {
+        "role": "primary",
+        "displayName": "Fired Oxide",
+        "canonical": "#4a150e",
+        "tonalRamp": [
+          "#1f0000",
+          "#440f08",
+          "#642d24",
+          "#864b41",
+          "#a96a60",
+          "#cc8b80",
+          "#f5b1a4",
+          "#ffe9e5"
+        ]
+      },
+      "oxide-950": {
+        "role": "primary",
+        "displayName": "Burnt Lamp Black-Red",
+        "canonical": "#2e0c07",
+        "tonalRamp": [
+          "#1e0100",
+          "#3b1812",
+          "#5a342d",
+          "#7b514a",
+          "#9d7168",
+          "#c09289",
+          "#e7b7ae",
+          "#ffe9e4"
+        ]
+      },
+      "oxide-600": {
+        "role": "primary",
+        "displayName": "Oxide Ink",
+        "canonical": "#94321f",
+        "tonalRamp": [
+          "#1e0100",
+          "#480700",
+          "#771401",
+          "#9b3926",
+          "#c05a46",
+          "#e67c66",
+          "#ffac99",
+          "#ffe9e4"
+        ]
+      },
+      "marigold": {
+        "role": "secondary",
+        "displayName": "Marigold",
+        "canonical": "#f2a516",
+        "tonalRamp": [
+          "#130900",
+          "#331f00",
+          "#583800",
+          "#7f5400",
+          "#a87000",
+          "#d48e00",
+          "#ffb337",
+          "#ffebd2"
+        ]
+      },
+      "marigold-300": {
+        "role": "secondary",
+        "displayName": "Marigold Light",
+        "canonical": "#ffc94d",
+        "tonalRamp": [
+          "#110a00",
+          "#302100",
+          "#523c00",
+          "#775800",
+          "#9e7600",
+          "#c79600",
+          "#f1bb3c",
+          "#ffecc7"
+        ]
+      },
+      "leaf": {
+        "role": "secondary",
+        "displayName": "Mango Leaf",
+        "canonical": "#2f6b2a",
+        "tonalRamp": [
+          "#001000",
+          "#012e00",
+          "#0e4e09",
+          "#316d2c",
+          "#528e4c",
+          "#73b16d",
+          "#98d791",
+          "#ccffc6"
+        ]
+      },
+      "leaf-800": {
+        "role": "secondary",
+        "displayName": "Deep Leaf",
+        "canonical": "#173a15",
+        "tonalRamp": [
+          "#001000",
+          "#082c07",
+          "#264a24",
+          "#446841",
+          "#638960",
+          "#84ab80",
+          "#a9d1a5",
+          "#d2fcce"
+        ]
+      },
+      "kumkum": {
+        "role": "secondary",
+        "displayName": "Kumkum",
+        "canonical": "#b3122e",
+        "tonalRamp": [
+          "#1f0002",
+          "#4b000c",
+          "#7c001a",
+          "#af092b",
+          "#d63d4a",
+          "#fe636a",
+          "#ffaaa8",
+          "#ffe8e7"
+        ]
+      },
+      "wall": {
+        "role": "secondary",
+        "displayName": "Painted-Wall Pista",
+        "canonical": "#c6dc9a",
+        "tonalRamp": [
+          "#080e00",
+          "#1e2900",
+          "#374701",
+          "#546627",
+          "#738648",
+          "#93a868",
+          "#b9ce8d",
+          "#e3f9b6"
+        ]
+      },
+      "steel": {
+        "role": "tertiary",
+        "displayName": "Steel",
+        "canonical": "#c9d0d4",
+        "tonalRamp": [
+          "#070c0f",
+          "#202528",
+          "#3b4144",
+          "#595f62",
+          "#787e82",
+          "#99a0a3",
+          "#bec5c9",
+          "#e9f0f4"
+        ]
+      },
+      "steel-600": {
+        "role": "tertiary",
+        "displayName": "Steel Shadow",
+        "canonical": "#8a959b",
+        "tonalRamp": [
+          "#050c11",
+          "#1d252a",
+          "#384147",
+          "#555f65",
+          "#747f85",
+          "#95a0a6",
+          "#bbc6cc",
+          "#e5f1f7"
+        ]
+      },
+      "steel-800": {
+        "role": "tertiary",
+        "displayName": "Steel Ink",
+        "canonical": "#3f484d",
+        "tonalRamp": [
+          "#060c10",
+          "#1d252a",
+          "#384146",
+          "#565f64",
+          "#757f84",
+          "#96a0a6",
+          "#bbc6cc",
+          "#e5f0f7"
+        ]
+      },
+      "copper": {
+        "role": "tertiary",
+        "displayName": "Copper",
+        "canonical": "#b5653a",
+        "tonalRamp": [
+          "#190500",
+          "#3f1600",
+          "#692a00",
+          "#914516",
+          "#b5653a",
+          "#da865b",
+          "#ffae85",
+          "#ffe9df"
+        ]
+      },
+      "scale": {
+        "role": "tertiary",
+        "displayName": "Calcium Scale",
+        "canonical": "#e8e5d8",
+        "tonalRamp": [
+          "#0d0b04",
+          "#26241a",
+          "#424035",
+          "#605e53",
+          "#807d72",
+          "#a19f92",
+          "#c7c4b8",
+          "#f2efe2"
+        ]
+      },
+      "dusk": {
+        "role": "tertiary",
+        "displayName": "Dusk Indigo",
+        "canonical": "#1b2340",
+        "tonalRamp": [
+          "#040822",
+          "#1a223f",
+          "#353e5d",
+          "#525c7d",
+          "#717c9f",
+          "#919dc2",
+          "#b6c3e9",
+          "#e8eeff"
+        ]
+      },
+      "deep": {
+        "role": "tertiary",
+        "displayName": "Deep Teal",
+        "canonical": "#0c3a45",
+        "tonalRamp": [
+          "#000e13",
+          "#002933",
+          "#1b4652",
+          "#3a6571",
+          "#5a8591",
+          "#7aa7b4",
+          "#9fcdda",
+          "#d4f5ff"
+        ]
+      },
+      "aqua": {
+        "role": "tertiary",
+        "displayName": "Soft-Water Aqua",
+        "canonical": "#5cc8d8",
+        "tonalRamp": [
+          "#000e11",
+          "#002a2f",
+          "#004951",
+          "#006a76",
+          "#038d9d",
+          "#40b0bf",
+          "#6bd6e7",
+          "#ccf8ff"
+        ]
+      },
+      "aqua-200": {
+        "role": "tertiary",
+        "displayName": "Aqua Mist",
+        "canonical": "#bfeef3",
+        "tonalRamp": [
+          "#000e10",
+          "#002a2e",
+          "#1b474c",
+          "#3a666a",
+          "#5a868b",
+          "#7ba8ac",
+          "#a0ced3",
+          "#c9f9fe"
+        ]
+      },
+      "ink-on-dark": {
+        "role": "neutral",
+        "displayName": "Lamp Cream",
+        "canonical": "#fff3e6",
+        "tonalRamp": [
+          "#110903",
+          "#2b2219",
+          "#473e34",
+          "#665c51",
+          "#867b70",
+          "#a79c90",
+          "#cdc2b6",
+          "#f8ecdf"
+        ]
+      },
+      "ink-on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Sandal Cream",
+        "canonical": "#f3d9c4",
+        "tonalRamp": [
+          "#160700",
+          "#321f0e",
+          "#503b2a",
+          "#6f5946",
+          "#8f7865",
+          "#b29985",
+          "#d8bfaa",
+          "#ffeada"
+        ]
+      },
+      "ink-on-light": {
+        "role": "neutral",
+        "displayName": "Oxide Ink on Light",
+        "canonical": "#2e0c07",
+        "tonalRamp": [
+          "#1e0100",
+          "#3b1812",
+          "#5a342d",
+          "#7b514a",
+          "#9d7168",
+          "#c09289",
+          "#e7b7ae",
+          "#ffe9e4"
+        ]
+      },
+      "ink-on-light-soft": {
+        "role": "neutral",
+        "displayName": "Soft Oxide Ink",
+        "canonical": "#5d3427",
+        "tonalRamp": [
+          "#1c0300",
+          "#3d170b",
+          "#5c3326",
+          "#7d5143",
+          "#9f7062",
+          "#c29182",
+          "#e9b7a7",
+          "#ffe9e2"
+        ]
+      },
+      "whatsapp": {
+        "role": "neutral",
+        "displayName": "WhatsApp Green",
+        "canonical": "#25d366",
+        "tonalRamp": [
+          "#001003",
+          "#002d0f",
+          "#004e1f",
+          "#007131",
+          "#009743",
+          "#00be56",
+          "#45e779",
+          "#c7ffd1"
+        ]
+      },
+      "whatsapp-ink": {
+        "role": "neutral",
+        "displayName": "WhatsApp Ink",
+        "canonical": "#07301a",
+        "tonalRamp": [
+          "#001005",
+          "#032c17",
+          "#234932",
+          "#41684f",
+          "#60886e",
+          "#81aa8e",
+          "#a6d0b3",
+          "#cffbdd"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field White",
+        "canonical": "#f4f8f1",
+        "tonalRamp": [
+          "#0a0c08",
+          "#222520",
+          "#3e413b",
+          "#5b5f59",
+          "#7b7f78",
+          "#9ca099",
+          "#c2c5bf",
+          "#ecf0e9"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The Kannada hero headline in marigold-300; desktop narrows to clamp(2.9rem, 6.4vw, 5.2rem)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings for services, process and enquiry, with a coloured span."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Act headings inside pinned scenes; 1.75rem on phones."
+      },
+      "spoken": {
+        "displayName": "Spoken",
+        "purpose": "The family's Kannada lines in curly quotes above each act title."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Explanatory copy at 30-38rem max width in the soft ink of its ground."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels, contact dt, steel tag text, nav links. Sentence case, no tracking."
+      }
+    },
+    "shadows": [
+      {
+        "name": "button-rest",
+        "value": "0 10px 24px -12px rgb(0 0 0 / 0.55)",
+        "purpose": "Every pill button at rest."
+      },
+      {
+        "name": "button-hover",
+        "value": "0 16px 30px -14px rgb(0 0 0 / 0.6)",
+        "purpose": "Pill hover, paired with a 2px rise."
+      },
+      {
+        "name": "form-panel",
+        "value": "0 30px 60px -30px rgb(0 0 0 / 0.6)",
+        "purpose": "The enquiry form panel, the one floating container."
+      },
+      {
+        "name": "header-solid",
+        "value": "0 12px 30px -20px rgb(0 0 0 / 0.8)",
+        "purpose": "Header once scrolled past 40px, with backdrop blur(10px) saturate(1.2)."
+      },
+      {
+        "name": "dock",
+        "value": "0 -10px 30px -16px rgb(0 0 0 / 0.8)",
+        "purpose": "Mobile action dock, mirrored upward."
+      },
+      {
+        "name": "steel-tag",
+        "value": "drop-shadow(0 3px 3px rgb(46 12 7 / 0.25))",
+        "purpose": "Filter on the steel price tag."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 3px solid #ffc94d; outline-offset: 3px",
+        "purpose": "Global :focus-visible."
+      },
+      {
+        "name": "field-focus",
+        "value": "0 0 0 4px rgb(242 165 22 / 0.3)",
+        "purpose": "Input focus halo with marigold border."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "UI transitions: button lift, header padding, services water-line."
+      },
+      {
+        "name": "act-pin",
+        "value": "ScrollTrigger pin: true, scrub: 0.8, end: +=180% to +=260%, ease: none",
+        "purpose": "Every story act (bore, hard, soft, happy)."
+      },
+      {
+        "name": "beat-crossfade",
+        "value": "autoAlpha 0/1 with 30px y travel, duration 0.3 timeline units",
+        "purpose": "Story beats inside a pinned act."
+      },
+      {
+        "name": "smooth-scroll",
+        "value": "Lenis lerp 0.1 on the GSAP ticker, lagSmoothing(0)",
+        "purpose": "Started only when motion is allowed."
+      },
+      {
+        "name": "mood-to",
+        "value": "attr d tween to data-happy / data-sad, power2.inOut, 0.6s default; tears fade at 0.6x",
+        "purpose": "Family face mood changes."
+      },
+      {
+        "name": "garland-velocity",
+        "value": "rotation = clamp(-14, 14, velocity / -180) x weight(0.6-1.3), quickTo 1.6s elastic.out(1, 0.3), settle after 0.15s",
+        "purpose": "Seam thoranam swing with scroll speed."
+      },
+      {
+        "name": "garland-entrance",
+        "value": "rotation random(-28, 28) from, 2.4s elastic.out(1, 0.35), stagger 0.025",
+        "purpose": "Hero thoranam drop-in."
+      },
+      {
+        "name": "valve-turn",
+        "value": "rotation -120 to 0, 0.8 units power2.out, scrub 0.6",
+        "purpose": "Process valve wheels."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "gsap.matchMedia('(prefers-reduced-motion: no-preference)'); global CSS caps durations at 0.01ms",
+        "purpose": "All timelines gated; acts render static end states."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "640px"
+      },
+      {
+        "name": "bore-stack",
+        "value": "760px"
+      },
+      {
+        "name": "act-stack",
+        "value": "860px"
+      },
+      {
+        "name": "grid-stack",
+        "value": "900px"
+      },
+      {
+        "name": "nav-hide",
+        "value": "1080px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Marigold pill; the default action and the Call button in the dock.",
+      "html": "<a class=\"ds-btn\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.3 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6a1 1 0 0 1-.3 1l-2.2 2.2Z\"/></svg>Call</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.6em; min-height: 3.25rem; padding: 0.7rem 1.4rem 0.6rem; border: 0; border-radius: 999px; background: var(--marigold, #f2a516); color: var(--oxide-950, #2e0c07); font: 700 1.05rem/1 'Baloo Tamma 2', system-ui, sans-serif; text-decoration: none; cursor: pointer; box-shadow: 0 10px 24px -12px rgb(0 0 0 / 0.55); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn svg { width: 1.25em; height: 1.25em; translate: 0 0.06em; } .ds-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -14px rgb(0 0 0 / 0.6); } .ds-btn:active { transform: translateY(0); } .ds-btn:focus-visible { outline: 3px solid #ffc94d; outline-offset: 3px; }"
+    },
+    {
+      "name": "WhatsApp Button",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "The conversion pill: header, hero, enquiry submit and dock.",
+      "html": "<a class=\"ds-btn-wa\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2.2a9.7 9.7 0 0 0-8.3 14.8L2.4 21.6l4.8-1.3A9.7 9.7 0 1 0 12 2.2Zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 19.9Z\"/></svg>Book a water test</a>",
+      "css": ".ds-btn-wa { display: inline-flex; align-items: center; justify-content: center; gap: 0.6em; min-height: 3.25rem; padding: 0.7rem 1.4rem 0.6rem; border-radius: 999px; background: #25d366; color: #07301a; font: 700 1.05rem/1 'Baloo Tamma 2', system-ui, sans-serif; text-decoration: none; box-shadow: 0 10px 24px -12px rgb(0 0 0 / 0.55); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-wa svg { width: 1.25em; height: 1.25em; translate: 0 0.06em; } .ds-btn-wa:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -14px rgb(0 0 0 / 0.6); } .ds-btn-wa:focus-visible { outline: 3px solid #ffc94d; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Cream-ringed pill for the secondary action on dark grounds.",
+      "html": "<div style=\"background:#7a2418;padding:1rem\"><a class=\"ds-btn-ghost\" href=\"#\">Call us</a></div>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; min-height: 3.25rem; padding: 0.7rem 1.4rem 0.6rem; border-radius: 999px; background: transparent; color: #fff3e6; box-shadow: inset 0 0 0 2px currentColor; font: 700 1.05rem/1 'Baloo Tamma 2', system-ui, sans-serif; text-decoration: none; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s; } .ds-btn-ghost:hover { transform: translateY(-2px); background: rgb(255 243 230 / 0.08); } .ds-btn-ghost:focus-visible { outline: 3px solid #ffc94d; outline-offset: 3px; }"
+    },
+    {
+      "name": "Water Source Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio chips on the leaf form panel; selected fills marigold.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"radio\" name=\"src\" checked><span>Borewell</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"src\"><span>Tanker</span></label></div>",
+      "css": ".ds-chips { display: flex; gap: 0.5rem; padding: 1rem; background: #2f6b2a; } .ds-chip { position: relative; font: 600 0.95rem/1 'Hind Mysuru', system-ui, sans-serif; } .ds-chip input { position: absolute; inset: 0; opacity: 0; cursor: pointer; } .ds-chip span { display: inline-flex; align-items: center; min-height: 2.6rem; padding: 0.55rem 1rem 0.45rem; border-radius: 999px; box-shadow: inset 0 0 0 2px rgb(255 255 255 / 0.45); color: #fff; transition: background-color 0.2s, color 0.2s; } .ds-chip input:checked + span { background: #f2a516; color: #2e0c07; box-shadow: none; } .ds-chip input:focus-visible + span { outline: 3px solid #ffc94d; outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Field-white input on the leaf panel with marigold focus.",
+      "html": "<label class=\"ds-field\"><span>Area or locality</span><input placeholder=\"e.g. Jayanagar, Mysuru Road\"></label>",
+      "css": ".ds-field { display: grid; gap: 0.45rem; padding: 1.5rem; background: #2f6b2a; border-radius: 28px; } .ds-field span { font: 700 1rem/1.3 'Baloo Tamma 2', system-ui, sans-serif; color: #fff; } .ds-field input { min-height: 3.1rem; padding: 0.75rem 1rem; border: 2px solid transparent; border-radius: 14px; background: #f4f8f1; color: #2e0c07; font: 500 1rem/1.4 'Hind Mysuru', system-ui, sans-serif; caret-color: #b3122e; transition: border-color 0.2s, box-shadow 0.2s; } .ds-field input::placeholder { color: #6b6f63; } .ds-field input:focus { outline: none; border-color: #f2a516; box-shadow: 0 0 0 4px rgb(242 165 22 / 0.3); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Solid oxide header with water-drop mark, pill links and the WhatsApp CTA.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-mark\" href=\"#\"><svg viewBox=\"0 0 40 40\" aria-hidden=\"true\"><path d=\"M20 4c-5 8-11 14-11 21a11 11 0 0 0 22 0c0-7-6-13-11-21z\" fill=\"#5cc8d8\"/><path d=\"M14.5 27a5.5 5.5 0 0 0 5.5 5.5\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg><span>Soft Water <small>Technologies</small></span></a><nav><a href=\"#\">Their story</a><a href=\"#\">Services</a><a href=\"#\">Contact</a></nav></header>",
+      "css": ".ds-top { display: flex; align-items: center; gap: 1.5rem; padding: 0.55rem 1.5rem; background: rgb(46 12 7 / 0.92); box-shadow: 0 12px 30px -20px rgb(0 0 0 / 0.8); } .ds-mark { display: flex; align-items: center; gap: 0.55rem; margin-right: auto; text-decoration: none; } .ds-mark svg { width: 2.3rem; height: 2.3rem; } .ds-mark span { display: grid; font: 800 1.3rem/0.95 'Baloo Tamma 2', system-ui, sans-serif; color: #fff3e6; } .ds-mark small { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; color: #ffc94d; } .ds-top nav { display: flex; gap: 0.25rem; } .ds-top nav a { padding: 0.5rem 0.85rem; border-radius: 999px; font: 600 0.98rem/1 'Baloo Tamma 2', system-ui, sans-serif; color: #fff3e6; text-decoration: none; transition: background-color 0.25s; } .ds-top nav a:hover { background: rgb(255 243 230 / 0.12); } .ds-top nav a:focus-visible { outline: 3px solid #ffc94d; outline-offset: 3px; }"
+    },
+    {
+      "name": "Steel Tag",
+      "kind": "chip",
+      "refersTo": "steel-tag",
+      "description": "Steel price tag on an oxide thread naming who a service is for.",
+      "html": "<div style=\"background:#c6dc9a;padding:1rem\"><span class=\"ds-tag\"><svg class=\"ds-tag-end\" viewBox=\"0 0 30 36\" aria-hidden=\"true\"><path d=\"M-12 4 Q2 2 14 12\" fill=\"none\" stroke=\"#7a2418\" stroke-width=\"1.6\"/><path d=\"M31 0 H14 L1 18 L14 36 H31 Z\" fill=\"#c9d0d4\"/><circle cx=\"13\" cy=\"18\" r=\"4\" fill=\"#c6dc9a\" stroke=\"#8a959b\" stroke-width=\"1.2\"/></svg><span class=\"ds-tag-body\">Homes, villas, apartments</span></span></div>",
+      "css": ".ds-tag { display: inline-flex; align-items: stretch; height: 2.25rem; filter: drop-shadow(0 3px 3px rgb(46 12 7 / 0.25)); } .ds-tag-end { width: 1.9rem; height: 100%; overflow: visible; margin-right: -1px; } .ds-tag-body { display: inline-flex; align-items: center; padding: 0.15rem 0.85rem 0 0.35rem; border-radius: 0 6px 6px 0; background: #c9d0d4; color: #3f484d; font: 700 0.86rem/1 'Baloo Tamma 2', system-ui, sans-serif; white-space: nowrap; }"
+    },
+    {
+      "name": "Valve Step",
+      "kind": "custom",
+      "refersTo": "valve-step",
+      "description": "Process step: steel valve wheel with numbered hub, title, Kannada sub-line and text.",
+      "html": "<div class=\"ds-step\"><svg class=\"ds-valve\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle cx=\"24\" cy=\"24\" r=\"19\"/><path d=\"M24 5v38M5 24h38M10.6 10.6l26.8 26.8M37.4 10.6 10.6 37.4\"/><circle class=\"ds-hub\" cx=\"24\" cy=\"24\" r=\"8\"/><text x=\"24\" y=\"28.5\" text-anchor=\"middle\">1</text></svg><div><h3>Water test</h3><p class=\"ds-kn\" lang=\"kn\">ನೀರಿನ ಪರೀಕ್ಷೆ</p></div><p class=\"ds-text\">We check your water before recommending anything.</p></div>",
+      "css": ".ds-step { display: grid; grid-template-columns: 3.6rem minmax(0, 0.9fr) minmax(0, 1.1fr); column-gap: 2rem; align-items: center; padding: 2rem 1rem; background: #7a2418; border-block: 1px solid rgb(255 243 230 / 0.14); color: #fff3e6; } .ds-valve { width: 3.6rem; height: 3.6rem; fill: none; stroke: #c9d0d4; stroke-width: 3.5; stroke-linecap: round; } .ds-hub { fill: #8a959b; } .ds-valve text { font: 800 13px/1 'Baloo Tamma 2', sans-serif; fill: #2e0c07; stroke: none; } .ds-step h3 { margin: 0; font: 800 clamp(1.8rem, 3vw, 2.6rem)/1.02 'Baloo Tamma 2', sans-serif; letter-spacing: -0.02em; } .ds-kn { margin: 0; font: 600 1.15rem 'Baloo Tamma 2', sans-serif; color: #f3d9c4; } .ds-text { margin: 0; color: #f3d9c4; font-family: 'Hind Mysuru', sans-serif; }"
+    },
+    {
+      "name": "Thoranam Garland",
+      "kind": "custom",
+      "refersTo": "thoranam",
+      "description": "Mango-leaf and marigold-strand garland on a sagging gold cord; each item sways from its top.",
+      "html": "<svg class=\"ds-thoranam\" viewBox=\"0 0 300 130\" aria-hidden=\"true\"><path d=\"M0 14 Q150 30 300 14\" stroke=\"#c99a3a\" stroke-width=\"3\" fill=\"none\"/><g transform=\"translate(25 20)\"><path d=\"M0 0 Q15 34 0 78 Q-15 34 0 0 Z\" fill=\"#3c8034\"/><path d=\"M0 4 V74\" stroke=\"#1f4d1c\" stroke-width=\"1.4\"/></g><g transform=\"translate(75 25)\"><path d=\"M0 0 V92\" stroke=\"#c99a3a\" stroke-width=\"1.5\"/><circle cy=\"14\" r=\"7.5\" fill=\"#f2a516\"/><circle cy=\"28\" r=\"7.5\" fill=\"#f2a516\"/><circle cy=\"42\" r=\"7.5\" fill=\"#f2a516\"/><circle cy=\"56\" r=\"7.5\" fill=\"#f2a516\"/><circle cy=\"70\" r=\"7.5\" fill=\"#f2a516\"/><circle cy=\"84\" r=\"7.5\" fill=\"#f2a516\"/></g><g transform=\"translate(125 27)\"><path d=\"M0 0 Q15 34 0 78 Q-15 34 0 0 Z\" fill=\"#2f6b2a\"/><path d=\"M0 4 V74\" stroke=\"#1f4d1c\" stroke-width=\"1.4\"/></g><g transform=\"translate(175 27)\"><path d=\"M0 0 Q15 34 0 78 Q-15 34 0 0 Z\" fill=\"#3c8034\"/><path d=\"M0 4 V74\" stroke=\"#1f4d1c\" stroke-width=\"1.4\"/></g><g transform=\"translate(225 25)\"><path d=\"M0 0 V92\" stroke=\"#c99a3a\" stroke-width=\"1.5\"/><circle cy=\"14\" r=\"7.5\" fill=\"#f2a516\"/><circle cy=\"28\" r=\"7.5\" fill=\"#f2a516\"/><circle cy=\"42\" r=\"7.5\" fill=\"#f2a516\"/><circle cy=\"56\" r=\"7.5\" fill=\"#f2a516\"/><circle cy=\"70\" r=\"7.5\" fill=\"#f2a516\"/><circle cy=\"84\" r=\"7.5\" fill=\"#f2a516\"/></g><g transform=\"translate(275 20)\"><path d=\"M0 0 Q15 34 0 78 Q-15 34 0 0 Z\" fill=\"#2f6b2a\"/><path d=\"M0 4 V74\" stroke=\"#1f4d1c\" stroke-width=\"1.4\"/></g></svg>",
+      "css": ".ds-thoranam { display: block; width: 100%; height: auto; background: #7a2418; overflow: visible; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Gruhapravesha Water Corner",
+    "overview": "The whole site is one family's new home, seen at the place where its water lives: a red-oxide floor, a mango-leaf thoranam over the door, two polished steel kodas, a copper kalasha and a chombu on a ledge. Nothing is stock or photographic. Every object is authored flat SVG illustration with lit metal gradients, and the only \"product shots\" are those vessels getting crusted with white scale and polished clean again. The drama comes from a scroll-performed story in pinned, scrubbed acts: housewarming, borewell, hard water, softener, joy.\n\nGrounds are drenched, full-bleed colour fields, one per act: red oxide for the home, dusk indigo for sadness, deep teal for the softener, marigold for joy, painted-wall pista for services, mango-leaf green for the enquiry. Type is a hand-painted-signboard rounded display (Baloo Tamma 2) carrying Kannada and English at the same weight, over a quiet Hind Mysuru body. Kannada carries feeling (spoken lines, headlines); English carries information.\n\nDensity is low and theatrical in the story acts, then tightens into ruled lists for services and process. Calls to action are fat pills: WhatsApp green is the one foreign colour in the world, and it is allowed in because it is the conversion.",
+    "keyCharacteristics": [
+      "Drenched colour-field grounds that change per act; no white page, no card grid.",
+      "Steel, copper and calcium-scale white are the only \"materials\"; scale is the enemy, aqua is the cure.",
+      "One rounded Kannada-capable display face for both scripts; `lang=\"kn\"` on every Kannada run.",
+      "Pinned, scrubbed GSAP acts with Lenis smooth scroll; every act has a static reduced-motion layout.",
+      "A page-long steel pipe on the left edge is the progress timeline; its water turns from cloudy scale to aqua after the softener act.",
+      "Pill buttons, steel price tags, valve-wheel steps and thoranam garlands are the house components."
+    ],
+    "rules": [
+      {
+        "name": "The Aqua Is Earned Rule",
+        "body": "Aqua appears only where water has been softened or is about to be. Hard, untreated water is scale white. Never use aqua as a generic \"water brand\" blue on the home acts.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Ground Per Act Rule",
+        "body": "Each act owns one drenched full-bleed ground from the palette; mood changes are made by tweening that ground (oxide-900 to dusk), not by layering cards on it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Foreign Green Rule",
+        "body": "WhatsApp green is the only colour outside the world, and it is used only on WhatsApp actions.",
+        "section": "colors"
+      },
+      {
+        "name": "The Same Voice Rule",
+        "body": "Kannada and English headings use the same display family and weight. Kannada is never demoted to a smaller or lighter subtitle style; when both appear, Kannada usually leads.",
+        "section": "typography"
+      },
+      {
+        "name": "The lang Rule",
+        "body": "Every Kannada run carries `lang=\"kn\"`, which forces the display family and zero tracking.",
+        "section": "typography"
+      },
+      {
+        "name": "The Mobile Dock Rule",
+        "body": "At 640px and below, a fixed bottom dock (WhatsApp 1.4fr, Call 1fr) is always present and sections reserve 4.4rem bottom padding for it. One tap to enquire, always.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lit Metal Rule",
+        "body": "Steel and copper are always lit gradients with a bright specular band; flat grey is reserved for the steel tag body.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** give each act one drenched full-bleed ground from the palette and change mood by tweening it.",
+      "**Do** keep aqua for softened water and scale white for hard water.",
+      "**Do** set Kannada in the display face with `lang=\"kn\"`, at the same weight as English.",
+      "**Do** end every scene within reach of a WhatsApp or Call pill; keep the mobile dock on phones.",
+      "**Do** add the 1.5rem pipe clearance to every section's left padding.",
+      "**Do** ship a static reduced-motion layout for every pinned act.",
+      "**Do** keep every unconfirmed claim (contacts, stats, certifications, partners, logo) in `site.config.ts` as a visible placeholder."
+    ],
+    "donts": [
+      "**Don't** use a blue water-splash hero, stock photography or a product card grid.",
+      "**Don't** use WhatsApp green for anything but WhatsApp actions.",
+      "**Don't** render steel or copper as flat fills in illustration.",
+      "**Don't** use pure white body text on dark grounds; use the cream inks.",
+      "**Don't** publish years in business, homes served, certifications, partners or testimonials until the client confirms them."
+    ]
+  }
+}

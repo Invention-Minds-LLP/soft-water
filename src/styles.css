@@ -1,0 +1,210 @@
+:root {
+  /* the home */
+  --oxide-950: #2e0c07;
+  --oxide-900: #4a150e;
+  --oxide: #7a2418;
+  --oxide-600: #94321f;
+  --oxide-400: #c2573c;
+  --marigold: #f2a516;
+  --marigold-300: #ffc94d;
+  --leaf: #2f6b2a;
+  --leaf-800: #173a15;
+  --kumkum: #b3122e;
+  --wall: #c6dc9a;
+
+  /* the water corner */
+  --steel-50: #f4f6f7;
+  --steel-100: #e4e8ea;
+  --steel: #c9d0d4;
+  --steel-600: #8a959b;
+  --steel-800: #3f484d;
+  --copper: #b5653a;
+  --copper-300: #e09466;
+  --scale: #e8e5d8;
+
+  /* the moods */
+  --dusk: #1b2340;
+  --dusk-950: #0e1326;
+  --aqua: #5cc8d8;
+  --aqua-200: #bfeef3;
+  --deep: #0c3a45;
+
+  --ink-on-dark: #fff3e6;
+  --ink-on-dark-soft: #f3d9c4;
+  --ink-on-light: #2e0c07;
+  --ink-on-light-soft: #5d3427;
+
+  --font-display: 'Baloo Tamma 2', 'Noto Sans Kannada', system-ui, sans-serif;
+  --font-body: 'Hind Mysuru', 'Noto Sans Kannada', system-ui, sans-serif;
+
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --section-y: clamp(5rem, 12vw, 9rem);
+  --radius: 999px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scrollbar-color: var(--marigold) var(--oxide-950);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  margin: 0;
+  background: var(--oxide);
+  color: var(--ink-on-dark);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--marigold);
+  color: var(--oxide-950);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--oxide-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--marigold);
+  border-radius: 10px;
+  border: 2px solid var(--oxide-950);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--marigold-300);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+[lang='kn'] {
+  font-family: var(--font-display);
+  letter-spacing: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* buttons, shared by every section */
+.btn {
+  --btn-bg: var(--marigold);
+  --btn-ink: var(--oxide-950);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  min-height: 3.25rem;
+  padding: 0.7rem 1.4rem 0.6rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--btn-bg);
+  color: var(--btn-ink);
+  font: 700 1.05rem/1 var(--font-display);
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 10px 24px -12px rgb(0 0 0 / 0.55);
+  transition:
+    transform 0.4s var(--ease-out),
+    box-shadow 0.4s var(--ease-out),
+    background-color 0.3s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px -14px rgb(0 0 0 / 0.6);
+}
+.btn:active {
+  transform: translateY(0);
+}
+.btn svg {
+  width: 1.25em;
+  height: 1.25em;
+  flex: none;
+}
+/* Baloo sits low in its box; drop the icon to meet the letters */
+.btn app-icon {
+  translate: 0 0.06em;
+}
+.btn--ghost {
+  --btn-bg: transparent;
+  --btn-ink: var(--ink-on-dark);
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+.btn--ghost:hover {
+  box-shadow: inset 0 0 0 2px currentColor;
+  background: rgb(255 243 230 / 0.08);
+}
+.btn--whatsapp {
+  --btn-bg: #25d366;
+  --btn-ink: #07301a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

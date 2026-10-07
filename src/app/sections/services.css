@@ -1,0 +1,160 @@
+:host {
+  display: block;
+}
+
+.services {
+  background: var(--wall);
+  color: var(--ink-on-light);
+  padding: var(--section-y) var(--gutter);
+  padding-left: calc(var(--gutter) + 1.5rem);
+}
+
+.head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 1.5rem 4rem;
+  align-items: end;
+  max-width: 78rem;
+  margin: 0 auto clamp(3rem, 6vw, 5rem);
+}
+h2 {
+  font-size: clamp(2.4rem, 5.6vw, 4.8rem);
+  color: var(--oxide);
+}
+h2 span {
+  color: var(--ink-on-light);
+}
+.head p {
+  color: var(--ink-on-light-soft);
+  max-width: 34rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 78rem;
+  border-top: 2px solid var(--oxide);
+}
+
+.row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1.1fr) minmax(0, 1.4fr) minmax(0, 0.7fr);
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.6rem 0.75rem;
+  border-bottom: 1px solid rgb(122 36 24 / 0.25);
+  isolation: isolate;
+}
+/* the water line rises behind a row on hover */
+.row::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--aqua-200);
+  transform: scaleY(0);
+  transform-origin: 50% 100%;
+  transition: transform 0.7s var(--ease-out);
+}
+.row:hover::before {
+  transform: scaleY(1);
+}
+
+.pic {
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: none;
+  stroke: var(--oxide);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.pic .f {
+  fill: var(--oxide);
+  stroke: none;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+  color: var(--oxide-950);
+}
+.kn {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--oxide-600);
+  margin-top: 0.15rem;
+}
+.text {
+  color: var(--ink-on-light-soft);
+}
+.for {
+  text-align: right;
+}
+/* a steel price tag on a thread */
+.tag {
+  display: inline-flex;
+  align-items: stretch;
+  height: 2.25rem;
+  filter: drop-shadow(0 3px 3px rgb(46 12 7 / 0.25));
+}
+.tag-end {
+  width: 1.9rem;
+  height: 100%;
+  flex: none;
+  overflow: visible;
+  margin-right: -1px;
+}
+.tag-steel {
+  fill: var(--steel);
+}
+.tag-hole {
+  fill: var(--wall);
+}
+.tag-ring {
+  fill: none;
+  stroke: var(--steel-600);
+  stroke-width: 1.2;
+}
+.thread {
+  fill: none;
+  stroke: var(--oxide);
+  stroke-width: 1.6;
+}
+.tag-body {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.85rem 0 0.35rem;
+  border-radius: 0 6px 6px 0;
+  background: var(--steel);
+  color: var(--steel-800);
+  font: 700 0.86rem/1 var(--font-display);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .head {
+    grid-template-columns: 1fr;
+  }
+  .row {
+    grid-template-columns: 3.25rem minmax(0, 1fr);
+    gap: 0.4rem 1rem;
+    align-items: start;
+    padding: 1.3rem 0.25rem;
+  }
+  .pic {
+    width: 2.8rem;
+    height: 2.8rem;
+    grid-row: span 3;
+  }
+  .text,
+  .for {
+    grid-column: 2;
+    text-align: left;
+  }
+  .for {
+    padding-left: 0.9rem;
+    margin-top: 0.3rem;
+  }
+}
