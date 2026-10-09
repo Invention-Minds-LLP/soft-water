@@ -1,0 +1,21 @@
+# Dependencies and build output: never put these in Git
+/node_modules
+/dist
+/out-tsc
+/bazel-out
+/.angular/cache
+/.sass-cache
+/tmp
+
+# Editor and system files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-error.log*

@@ -1,0 +1,433 @@
+<!--
+  Soft Water Technologies: the whole page (one HTML file).
+  - Every image path is written right here. Search for  images/  to find them, and change the file name.
+  - Put your pictures in the  public/images/  folder.
+  - The words and numbers that change (phone, email, lists) are in softwater.ts.
+-->
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============================ HEADER ============================ -->
+<header class="header">
+  <div class="wrap header__in">
+    <a class="logo" href="#home" aria-label="Soft Water Technologies, home">
+      <img src="images/logo.svg" alt="Soft Water Technologies" width="220" height="60" />
+    </a>
+    <nav [class.is-open]="menu()" aria-label="Main">
+      @for (n of nav; track n.h) {
+        <a [href]="n.h" (click)="menu.set(false)">{{ n.l }}</a>
+      }
+      <a class="nav__phone" [href]="tel" (click)="menu.set(false)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.phone" /></svg> {{ site.phoneDisplay }}</a>
+    </nav>
+    <a class="btn btn--primary btn--sm header__cta" href="#contact">Get a Quote</a>
+    <button type="button" class="burger" (click)="menu.set(!menu())" [attr.aria-expanded]="menu()" aria-label="Menu">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic[menu() ? 'close' : 'menu']" /></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ============================ HOME (HERO) ============================ -->
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <h1 id="hero-title">Pure &amp; Soft Water for a Healthier Tomorrow</h1>
+        <p class="lede">Advanced water treatment solutions for homes, apartments, industries and commercial spaces.</p>
+        <ul class="hero__perks">
+          @for (b of perks; track b.t; let last = $last) {
+            <li><span class="ring"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic[b.i]" /></svg></span><b>{{ b.t }}</b></li>
+            @if (!last) { <li class="sep" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.chevron" /></svg></li> }
+          }
+        </ul>
+        <div class="actions">
+          <a class="btn btn--primary" href="#contact">Get a Free Water Test <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.arrow" /></svg></a>
+          <a class="btn btn--outline" href="#services">Our Services <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.arrow" /></svg></a>
+        </div>
+      </div>
+
+      <!-- HERO IMAGE: computer, tablet and phone pictures. Change the file names here. -->
+      <div class="hero__pic">
+        <picture>
+          <source media="(max-width: 640px)" srcset="images/hero-mob.png" />
+          <source media="(max-width: 980px)" srcset="images/hero-tab.png" />
+          <img src="images/hero-web.png" alt="Water softener, carbon filter and sand filter fitted at a home" width="1403" height="1121" fetchpriority="high" />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <div class="features-band">
+    <section class="wrap features" aria-label="What we do">
+      @for (f of features; track f.t) {
+        <a [href]="f.h"><span class="ring"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic[f.i]" /></svg></span><b>{{ f.t }}</b></a>
+      }
+    </section>
+  </div>
+
+  <!-- ============================ TECHNOLOGY ============================ -->
+  <section class="band band--tech" id="technology" aria-labelledby="tech-title">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Our technology</p>
+        <h2 id="tech-title">Advanced Soft Water <span>Technology</span></h2>
+        <p>
+          We use state-of-the-art water softening and filtration systems to remove hardness (calcium &amp;
+          magnesium) and other impurities, giving you clean, safe and soft water.
+        </p>
+        <ul class="checks">
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.check" /></svg> Ion Exchange Water Softener</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.check" /></svg> Multi-Stage Filtration</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.check" /></svg> Automatic Regeneration</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.check" /></svg> Smart Monitoring Systems</li>
+        </ul>
+        <a class="btn btn--primary" href="#services">Learn More <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.arrow" /></svg></a>
+      </div>
+      <!-- TECHNOLOGY IMAGE -->
+      <picture>
+        <source media="(max-width: 640px)" srcset="images/new-softwater-teconolgy/softwater-technology-mob.webp" />
+        <source media="(max-width: 980px)" srcset="images/new-softwater-teconolgy/softwater-technology-tab.webp" />
+        <img class="split__img" src="images/new-softwater-teconolgy/softwater-technology-web.webp" alt="Inside a water softener: hard water in, soft water out" width="707" height="565" loading="lazy" />
+      </picture>
+    </div>
+  </section>
+
+  <!-- ============================ WATER TESTING ============================ -->
+  <section class="band band--test" id="testing" aria-labelledby="test-title">
+    <div class="wrap split split--test">
+      <!-- WATER TESTING IMAGE -->
+      <!-- The browser picks the best file for the screen, by each picture's real width (288w, 317w, 706w). -->
+      <img class="split__img"
+        src="images/water-anaylsis/underground-water-testing-tab.webp"
+        srcset="images/water-anaylsis/underground-water-testing-mob.webp 288w, images/water-anaylsis/underground-water-testing-web.webp 317w, images/water-anaylsis/underground-water-testing-tab.webp 706w"
+        sizes="(max-width: 980px) 100vw, 520px"
+        alt="Technician testing a borewell water sample" width="706" height="549" loading="lazy" />
+      <div>
+        <p class="eyebrow">Water analysis</p>
+        <h2 id="test-title">Underground Water Testing</h2>
+        <p>Know what's in your water! We provide complete water testing services to identify hardness, TDS, iron, pH and other impurities.</p>
+        <ul class="checks">
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.check" /></svg> pH &amp; TDS Level</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.check" /></svg> Total Hardness (Calcium &amp; Magnesium)</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.check" /></svg> Iron, Nitrates, Fluoride</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.check" /></svg> Bacterial &amp; Chemical Analysis</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.check" /></svg> Detailed Report with Expert Suggestion</li>
+        </ul>
+        <button type="button" class="btn btn--primary" (click)="know('Free water test')">Book a Water Test <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.arrow" /></svg></button>
+      </div>
+      <ul class="panel" aria-hidden="true">
+        @for (t of tests; track t) { <li>{{ t }} <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.check" /></svg></li> }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ PRODUCTS ============================ -->
+  <section class="sec" id="services" aria-labelledby="prod-title">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Our products</p>
+        <h2 id="prod-title">Complete Water Treatment Solutions</h2>
+      </header>
+      <div class="products">
+        <article class="product">
+          <img src="images/our-product/water_softener/Water_Softener_mob.png"
+          srcset="images/our-product/water_softener/Water_Softener_web.png 188w, images/our-product/water_softener/Water_Softener_tab.png 251w, images/our-product/water_softener/Water_Softener_mob.png 306w"
+          sizes="(max-width: 640px) 90vw, (max-width: 980px) 45vw, 22vw"
+          alt="Water Softener" width="306" height="306" loading="lazy" />
+          <h3>Water Softener</h3>
+          <p>Removes hardness and gives soft water for homes, apartments and industry.</p>
+          <button type="button" class="btn btn--outline btn--sm" (click)="know('Water Softener')">View Details</button>
+        </article>
+        <article class="product">
+          <img src="images/our-product/sand_filter/Sand_Filter_mob.png"
+          srcset="images/our-product/sand_filter/Sand_Filter_web.png 188w, images/our-product/sand_filter/Sand_Filter_tab.png 251w, images/our-product/sand_filter/Sand_Filter_mob.png 306w"
+          sizes="(max-width: 640px) 90vw, (max-width: 980px) 45vw, 22vw"
+          alt="Sand Filter" width="306" height="306" loading="lazy" />
+          <h3>Sand Filter</h3>
+          <p>Removes suspended particles, mud, dust and sediments.</p>
+          <button type="button" class="btn btn--outline btn--sm" (click)="know('Sand Filter')">View Details</button>
+        </article>
+        <article class="product">
+          <img src="images/our-product/carbon-filter/Carbon_Filter_tab.png"
+          srcset="images/our-product/carbon-filter/Carbon_Filter_web.png 188w, images/our-product/carbon-filter/Carbon_Filter_mob.png 251w, images/our-product/carbon-filter/Carbon_Filter_tab.png 306w"
+          sizes="(max-width: 640px) 90vw, (max-width: 980px) 45vw, 22vw"
+          alt="Carbon Filter" width="306" height="306" loading="lazy" />
+          <h3>Carbon Filter</h3>
+          <p>Removes chlorine, odour, colour and organic impurities.</p>
+          <button type="button" class="btn btn--outline btn--sm" (click)="know('Carbon Filter')">View Details</button>
+        </article>
+        <article class="product">
+          <img src="images/our-product/ro_plant/RO_Plant_tab.png"
+          srcset="images/our-product/ro_plant/RO_Plant_web.png 188w, images/our-product/ro_plant/RO_Plant_mob.png 251w, images/our-product/ro_plant/RO_Plant_tab.png 306w"
+          sizes="(max-width: 640px) 90vw, (max-width: 980px) 45vw, 22vw"
+          alt="RO Plant" width="306" height="306" loading="lazy" />
+          <h3>RO Plant</h3>
+          <p>Provides pure drinking water with reverse osmosis technology.</p>
+          <button type="button" class="btn btn--outline btn--sm" (click)="know('RO Plant')">View Details</button>
+        </article>
+      </div>
+      <p class="more">
+        We also supply water conditioners, smart controllers, sewage and effluent treatment plants.
+        <a href="#contact">Ask us</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================ BENEFITS ============================ -->
+  <section class="sec sec--wave" id="benefits" aria-labelledby="ben-title">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Why choose soft water</p>
+        <h2 id="ben-title">Benefits of Soft Water</h2>
+      </header>
+      <ul class="benefits">
+        @for (b of benefits; track b.t) {
+          <li><span class="ring"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic[b.i]" /></svg></span><b>{{ b.t }}</b></li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ GALLERY ============================ -->
+  <section class="sec" id="gallery" aria-labelledby="gal-title">
+    <div class="wrap">
+      <header class="sec__head sec__head--row">
+        <div>
+          <p class="eyebrow">Our gallery</p>
+          <h2 id="gal-title">Our Recent Projects</h2>
+        </div>
+        <div class="arrows">
+          <button type="button" aria-label="Previous photos" (click)="slide(-1)"><span class="flip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.chevron" /></svg></span></button>
+          <button type="button" aria-label="Next photos" (click)="slide(1)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.chevron" /></svg></button>
+        </div>
+      </header>
+      <!-- PROJECT PHOTOS: the browser picks the best file by real width (236w or 345w). Add or remove <li> lines freely. -->
+      <ul class="gallery" #gallery tabindex="0" aria-label="Project photos">
+        <li><img src="images/our-recent-project/Apartment_Water_Softener_1tab.png" srcset="images/our-recent-project/Apartment_Water_Softener_1mob.png 236w, images/our-recent-project/Apartment_Water_Softener_1tab.png 345w" sizes="(max-width: 640px) 82vw, (max-width: 980px) 45vw, 365px" alt="Water softener installed for an apartment" width="345" height="258" loading="lazy" /></li>
+        <li><img src="images/our-recent-project/Commercial_RO_Plant_2tab.png" srcset="images/our-recent-project/Commercial_RO_Plant_2mob.png 236w, images/our-recent-project/Commercial_RO_Plant_2tab.png 345w" sizes="(max-width: 640px) 82vw, (max-width: 980px) 45vw, 365px" alt="Commercial RO plant installation" width="345" height="258" loading="lazy" /></li>
+        <li><img src="images/our-recent-project/Industrial_Filtration_3tab.png" srcset="images/our-recent-project/Industrial_Filtration_mob.png 236w, images/our-recent-project/Industrial_Filtration_3tab.png 345w" sizes="(max-width: 640px) 82vw, (max-width: 980px) 45vw, 365px" alt="Industrial filtration system" width="345" height="258" loading="lazy" /></li>
+        <li><img src="images/our-recent-project/Home_Water_Treatment_4tab.png" srcset="images/our-recent-project/Home_Water_Treatment_4mob.png 236w, images/our-recent-project/Home_Water_Treatment_4tab.png 345w" sizes="(max-width: 640px) 82vw, (max-width: 980px) 45vw, 365px" alt="Home water treatment under the kitchen sink" width="345" height="258" loading="lazy" /></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ ABOUT ============================ -->
+  <section class="band band--about" id="about" aria-labelledby="about-title">
+    <div class="wrap split split--about">
+      <!-- ABOUT IMAGE -->
+      <!-- (the browser picks the best file by real width: 288w, 576w, 706w) -->
+      <img class="split__img"
+        src="images/about/about-water-tab.webp"
+        srcset="images/about/about-water-mob.webp 288w, images/about/about-water-web.webp 576w, images/about/about-water-tab.webp 706w"
+        sizes="(max-width: 980px) 100vw, 560px"
+        alt="Technician and customer with a glass of clean water beside a water treatment plant" width="706" height="549" loading="lazy" />
+      <div>
+        <p class="eyebrow">About us</p>
+        <h2 id="about-title">Your Trusted Water <span>Treatment Partner</span></h2>
+        <p>
+          We are committed to providing reliable and advanced water treatment solutions for homes, apartments,
+          industries and commercial spaces. Our mission is to deliver safe, clean and soft water with modern
+          technology and excellent service support.
+        </p>
+        <ul class="values">
+          @for (v of values; track v.t) {
+            <li><span class="ring ring--sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic[v.i]" /></svg></span><b>{{ v.t }}</b></li>
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ HOW IT WORKS ============================ -->
+  <section class="sec" id="process" aria-labelledby="proc-title">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Our process</p>
+        <h2 id="proc-title">How It Works</h2>
+      </header>
+      <ol class="process">
+        @for (s of steps; track s.t; let i = $index; let last = $last) {
+          <li>
+            <span class="ring"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic[s.i]" /></svg><i>{{ i + 1 }}</i></span>
+            <div><b>{{ s.t }}</b><span>{{ s.d }}</span></div>
+            @if (!last) { <span class="arrow-sep"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.arrow" /></svg></span> }
+          </li>
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================ REVIEWS ============================ -->
+  <!--
+    These are SAMPLE boxes, shown only while site.placeholders is true (in softwater.ts).
+    When you have real customer reviews: copy one <figure> below for each review, write the
+    real name and words, and delete the @if line and its closing brace. Never add a review that is not real.
+  -->
+  @if (site.placeholders) {
+    <section class="sec sec--tint" id="reviews" aria-labelledby="rev-title">
+      <div class="wrap">
+        <header class="sec__head">
+          <p class="eyebrow">Testimonials</p>
+          <h2 id="rev-title">What Our Customers Say</h2>
+        </header>
+        <div class="reviews">
+          @for (r of sampleReviews; track r) {
+            <figure class="review is-sample">
+              <blockquote>Sample box. A real customer review will appear here. Edit these boxes in softwater.html.</blockquote>
+              <div class="stars" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.star" /></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.star" /></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.star" /></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.star" /></svg><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.star" /></svg></div>
+              <figcaption>
+                <!-- CUSTOMER PHOTO -->
+                <img src="images/person.svg" alt="" width="56" height="56" loading="lazy" />
+                <span><b>Customer name</b>Area, city</span>
+              </figcaption>
+            </figure>
+          }
+        </div>
+      </div>
+    </section>
+  }
+
+  <!-- ============================ FAQ ============================ -->
+  <section class="sec" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faqgrid">
+      <div class="faqgrid__text">
+        <header class="sec__head sec__head--left">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Hard water, explained simply</h2>
+        </header>
+        <div class="faq">
+          @for (f of faqs; track f.q; let i = $index) {
+            <details name="faq" [open]="i === 0">
+              <summary (click)="react()"><h3>{{ f.q }}</h3><span class="plus" aria-hidden="true"></span></summary>
+              <p>{{ f.a }}</p>
+            </details>
+          }
+        </div>
+      </div>
+      <!-- FAQ ANIMATION: a crystal-clear water drop. Tap it to wobble and splash and to see the next fact. Pure SVG + CSS, no image files. -->
+      <button type="button" class="stage" [class.pop]="pop()" (click)="react(true)" aria-label="Tap the water drop to see a soft water fact">
+        <span class="stage__bubble" aria-live="polite">{{ tips[tip()] }}</span>
+        <svg class="stage__svg" viewBox="0 0 600 470" aria-hidden="true">
+          <defs>
+            <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#19a3c0"/><stop offset=".55" stop-color="#0a6b92"/><stop offset="1" stop-color="#042c47"/></linearGradient>
+            <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fe3f2" stop-opacity=".75"/><stop offset=".25" stop-color="#1b9bc0" stop-opacity=".85"/><stop offset="1" stop-color="#03263d"/></linearGradient>
+            <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".42"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+            <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f8fc"/><stop offset=".35" stop-color="#a9bccd"/><stop offset=".6" stop-color="#e9f0f7"/><stop offset="1" stop-color="#6f879c"/></linearGradient>
+            <radialGradient id="dropBody" cx=".36" cy=".32" r=".85"><stop offset="0" stop-color="#fff" stop-opacity=".62"/><stop offset=".4" stop-color="#bfeaff" stop-opacity=".2"/><stop offset=".78" stop-color="#3fb0e8" stop-opacity=".3"/><stop offset="1" stop-color="#d8f6ff" stop-opacity=".7"/></radialGradient>
+            <radialGradient id="dropFocus"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset=".55" stop-color="#a8ecff" stop-opacity=".55"/><stop offset="1" stop-color="#a8ecff" stop-opacity="0"/></radialGradient>
+            <linearGradient id="dropRim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#9fdcff"/><stop offset="1" stop-color="#fff"/></linearGradient>
+            <radialGradient id="bubG" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".35" stop-color="#d6f6ff" stop-opacity=".12"/><stop offset="1" stop-color="#bff0ff" stop-opacity=".35"/></radialGradient>
+            <clipPath id="dropClip"><path d="M0 -118C-54 -44 -90 0 -90 48a90 90 0 0 0 180 0C90 0 54 -44 0 -118Z"/></clipPath>
+            <clipPath id="poolClip"><rect x="0" y="372" width="600" height="100"/></clipPath>
+          </defs>
+          <rect width="600" height="470" fill="url(#sea)"/>
+          <!-- light rays from above -->
+          <g class="rays">
+            <polygon class="ray" points="70,0 140,0 330,380 170,380" fill="url(#ray)" opacity=".5"/>
+            <polygon class="ray ray--b" points="230,0 290,0 470,380 340,380" fill="url(#ray)" opacity=".4"/>
+            <polygon class="ray ray--c" points="400,0 470,0 600,330 520,380" fill="url(#ray)" opacity=".35"/>
+          </g>
+          <circle class="spark" cx="90" cy="150" r="2.2" style="animation-delay:0s"/><circle class="spark" cx="250" cy="110" r="2.2" style="animation-delay:-1.2s"/><circle class="spark" cx="380" cy="170" r="2.2" style="animation-delay:-2.1s"/><circle class="spark" cx="540" cy="140" r="2.2" style="animation-delay:-0.6s"/><circle class="spark" cx="300" cy="300" r="2.2" style="animation-delay:-1.7s"/><circle class="spark" cx="70" cy="300" r="2.2" style="animation-delay:-2.6s"/>
+          <!-- chrome tap with a drop forming, falling and splashing -->
+          <g>
+            <rect x="-10" y="38" width="170" height="30" rx="15" fill="url(#chrome)"/>
+            <rect x="132" y="56" width="34" height="42" rx="8" fill="url(#chrome)"/>
+            <rect x="138" y="94" width="22" height="12" rx="4" fill="#7b92a6"/>
+            <rect x="20" y="44" width="120" height="5" rx="2.5" fill="#fff" opacity=".7"/>
+            <g transform="translate(149 112)"><path class="fdrop" d="M0 -9C-6 0 -8 4 -8 7a8 8 0 0 0 16 0C8 4 6 0 0 -9Z" fill="url(#dropBody)" stroke="#fff" stroke-width="1.3"/></g>
+          </g>
+          <!-- pool -->
+          <rect x="0" y="372" width="600" height="100" fill="url(#pool)"/>
+          <g clip-path="url(#poolClip)" opacity=".22" transform="translate(450 503) scale(.95 -.95)">
+            <path d="M0 -118C-54 -44 -90 0 -90 48a90 90 0 0 0 180 0C90 0 54 -44 0 -118Z" fill="url(#dropBody)"/><path d="M0 -118C-54 -44 -90 0 -90 48a90 90 0 0 0 180 0C90 0 54 -44 0 -118Z" fill="none" stroke="#fff" stroke-width="3.5"/>
+          </g>
+          <ellipse class="focus" cx="450" cy="374" rx="58" ry="8" fill="#eaffff" opacity=".7"/>
+          <rect class="horizon" x="0" y="371" width="600" height="2.5" fill="#fff" opacity=".55"/>
+          <ellipse class="fr" cx="150" cy="376" rx="30" ry="7"/>
+          <ellipse class="fr fr--b" cx="150" cy="376" rx="30" ry="7"/>
+          <ellipse class="fr fr--c" cx="150" cy="376" rx="30" ry="7"/>
+          <g class="fsplash"><circle class="fs" cx="150" cy="372" r="3" style="--x:-26px;--y:-34px"/><circle class="fs" cx="150" cy="372" r="3" style="--x:-12px;--y:-52px"/><circle class="fs" cx="150" cy="372" r="3" style="--x:10px;--y:-56px"/><circle class="fs" cx="150" cy="372" r="3" style="--x:26px;--y:-36px"/><circle class="fs" cx="150" cy="372" r="3" style="--x:-38px;--y:-14px"/><circle class="fs" cx="150" cy="372" r="3" style="--x:38px;--y:-16px"/></g>
+          <!-- crystal-clear water drop -->
+          <g transform="translate(450 241) scale(.95)">
+            <g class="mascot">
+              <path d="M0 -118C-54 -44 -90 0 -90 48a90 90 0 0 0 180 0C90 0 54 -44 0 -118Z" fill="url(#dropBody)"/>
+              <g clip-path="url(#dropClip)">
+                <path d="M-100 58Q-50 36 0 54T100 48V150H-100Z" fill="#c9f4ff" opacity=".4"/>
+                <ellipse cx="0" cy="104" rx="54" ry="38" fill="url(#dropFocus)"/>
+                <path d="M0 -118C-54 -44 -90 0 -90 48a90 90 0 0 0 180 0C90 0 54 -44 0 -118Z" fill="none" stroke="#0a4a7a" stroke-width="16" opacity=".28"/>
+              </g>
+              <path d="M0 -118C-54 -44 -90 0 -90 48a90 90 0 0 0 180 0C90 0 54 -44 0 -118Z" fill="none" stroke="url(#dropRim)" stroke-width="3.5"/>
+              <g class="shine">
+                <ellipse cx="-44" cy="-4" rx="12" ry="36" fill="#fff" opacity=".95" transform="rotate(-22 -44 -4)"/>
+                <circle cx="-26" cy="-52" r="6" fill="#fff" opacity=".9"/>
+                <path d="M52 88q-14 28 -42 40" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+                <circle cx="58" cy="52" r="4" fill="#fff" opacity=".6"/>
+              </g>
+            </g>
+          </g>
+          <ellipse class="rip" cx="450" cy="376" rx="34" ry="8"/>
+          <ellipse class="rip rip--b" cx="450" cy="376" rx="34" ry="8"/>
+          <ellipse class="rip rip--c" cx="450" cy="376" rx="34" ry="8"/>
+          <g class="stage__waves">
+            <path class="wave wave--a" d="M0 402 q50 -9 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 V480 H0Z" fill="#8fe6f5" opacity=".28"/>
+            <path class="wave wave--b" d="M0 428 q50 -8 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 V480 H0Z" fill="#032a43" opacity=".5"/>
+          </g>
+          <circle class="bub" cx="60" cy="452" r="7" style="animation-delay:0s;animation-duration:9s"/><circle class="bub" cx="130" cy="452" r="4" style="animation-delay:-2s;animation-duration:11s"/><circle class="bub" cx="210" cy="452" r="9" style="animation-delay:-4s;animation-duration:10s"/><circle class="bub" cx="300" cy="452" r="5" style="animation-delay:-1s;animation-duration:12s"/><circle class="bub" cx="360" cy="452" r="6" style="animation-delay:-6s;animation-duration:9s"/><circle class="bub" cx="520" cy="452" r="8" style="animation-delay:-3s;animation-duration:11s"/><circle class="bub" cx="570" cy="452" r="4" style="animation-delay:-7s;animation-duration:10s"/><circle class="bub" cx="480" cy="452" r="5" style="animation-delay:-5s;animation-duration:12s"/><circle class="bub" cx="250" cy="452" r="4" style="animation-delay:-8s;animation-duration:9s"/>
+          <g class="splash"><circle class="spl" cx="450" cy="250" r="7" style="--x:-95px;--y:-110px"/><circle class="spl" cx="450" cy="250" r="7" style="--x:-55px;--y:-140px"/><circle class="spl" cx="450" cy="250" r="7" style="--x:0px;--y:-155px"/><circle class="spl" cx="450" cy="250" r="7" style="--x:55px;--y:-140px"/><circle class="spl" cx="450" cy="250" r="7" style="--x:95px;--y:-110px"/><circle class="spl" cx="450" cy="250" r="7" style="--x:-125px;--y:-60px"/><circle class="spl" cx="450" cy="250" r="7" style="--x:125px;--y:-60px"/></g>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT ============================ -->
+  <section class="sec sec--tint" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact">
+      <div class="contact__info">
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="contact-title">Contact Us</h2>
+        <p>Have a question or want a free water test? Reach out to us anytime.</p>
+        <ul class="info">
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.phone" /></svg> <a [href]="tel">{{ site.phoneDisplay }}</a></li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.mail" /></svg> <a [href]="'mailto:' + site.email">{{ site.email }}</a></li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.pin" /></svg> {{ site.address }}</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.clock" /></svg> {{ site.hours }}</li>
+        </ul>
+      </div>
+
+      <form class="form" (submit)="send($event, n.value, ph.value, em.value, pr.value, m.value)">
+        <div class="form__row">
+          <label><span class="sr">Your name</span><input #n name="name" placeholder="Your Name" autocomplete="name" required /></label>
+          <label><span class="sr">Phone number</span><input #ph name="phone" type="tel" placeholder="Your Phone Number" autocomplete="tel" inputmode="tel" required /></label>
+        </div>
+        <label><span class="sr">Email</span><input #em name="email" type="email" placeholder="Your Email" autocomplete="email" /></label>
+        <label><span class="sr">Service interested in</span>
+          <select #pr name="product">
+            @for (o of services; track o) { <option [value]="o" [selected]="interest() === o">{{ o }}</option> }
+          </select>
+        </label>
+        <label><span class="sr">Message</span><textarea #m name="message" rows="3" placeholder="Your Message"></textarea></label>
+        <button class="btn btn--primary" type="submit">Send Message <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.arrow" /></svg></button>
+        <p class="note">This opens WhatsApp with your details filled in. Nothing is sent until you press send there.</p>
+      </form>
+
+      <div class="map">
+        @if (map) {
+          <iframe [src]="map" title="Our location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        } @else {
+          <div class="map__ph"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.pin" /></svg><b>Map placeholder</b><span>Add the Google Maps link in softwater.ts (mapEmbed).</span></div>
+        }
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="wrap footer__row">
+    <p class="footer__copy">© {{ year }} {{ site.name }}. All rights reserved.</p>
+    <!-- [TO CONFIRM] put the real Invention Minds LLP website link in href below -->
+    <p class="footer__credit">Designed and developed by
+      <a href="https://inventionminds.com" target="_blank" rel="noopener noreferrer">Invention Minds LLP</a></p>
+    <a class="footer__logo" href="#home" aria-label="Soft Water Technologies, home"><img src="images/logo-light.svg" alt="Soft Water Technologies" width="220" height="60" loading="lazy" /></a>
+  </div>
+</footer>
+
+<a class="fab" [href]="wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" [attr.d]="ic.whatsapp" /></svg></a>

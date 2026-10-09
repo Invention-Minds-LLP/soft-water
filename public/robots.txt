@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# After launch, add your sitemap here, for example:
+# Sitemap: https://YOUR-DOMAIN/sitemap.xml
