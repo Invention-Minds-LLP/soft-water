@@ -1,5 +1,6 @@
+import { provideBrowserGlobalErrorListeners } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { App } from './app/app';
+import { SoftWater } from './app/softwater';
 
-bootstrapApplication(App, appConfig).catch((err) => console.error(err));
+// Starts the site. (The old app.config.ts is merged in here.)
+bootstrapApplication(SoftWater, { providers: [provideBrowserGlobalErrorListeners()] }).catch((err) => console.error(err));
